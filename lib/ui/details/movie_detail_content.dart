@@ -25,7 +25,7 @@ class MovieDetailContent extends StatelessWidget {
             width: double.infinity,
             height: 220,
             child: item.backdropPath.ifNotNullOrBlank()
-                ? ImdbImageWidget(imageUrl: "${Constants.BACKDROP_BASE_URL}${item.backdropPath}")
+                ? ImdbImageWidget(imageUrl: "${Constants.backDropBaseUrl}${item.backdropPath}")
                 : ImageErrorWidget(width: 100, height: 100),
           ),
           const SizedBox(height: 15),

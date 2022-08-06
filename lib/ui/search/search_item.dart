@@ -1,4 +1,3 @@
-import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_movie/utils/constants.dart';
@@ -21,7 +20,7 @@ class SearchItem extends StatelessWidget {
           Container(
             width: double.infinity,
             child: item.posterPath.ifNotNullOrBlank()
-                ? ImdbImageWidget(imageUrl: "${Constants.POSTER_BASE_URL}${item.posterPath}")
+                ? ImdbImageWidget(imageUrl: "${Constants.posterBaseUrl}${item.posterPath}")
                 : ImageErrorWidget(width: 100, height: 100),
           ),
           Align(

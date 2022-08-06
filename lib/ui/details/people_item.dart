@@ -23,7 +23,7 @@ class PeopleItem extends StatelessWidget {
             Container(
               width: double.infinity,
               child: cast.profilePath.ifNotNullOrBlank()
-                  ? ImdbImageWidget(imageUrl: "${Constants.POSTER_BASE_URL}${cast.profilePath}")
+                  ? ImdbImageWidget(imageUrl: "${Constants.posterBaseUrl}${cast.profilePath}")
                   : ImageErrorWidget(width: 50, height: 50),
             ),
             Align(

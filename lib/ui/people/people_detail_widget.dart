@@ -30,7 +30,7 @@ class PeopleDetailWidget extends StatelessWidget {
                       child: Container(
                         height: 200,
                         width: 200,
-                        child: ImdbImageWidget(imageUrl: "${Constants.PEOPLE_BASE_URL}${item.profilePath}"),
+                        child: ImdbImageWidget(imageUrl: "${Constants.peopleBaseUrl}${item.profilePath}"),
                       ),
                     )
                   : ClipRRect(

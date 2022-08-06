@@ -1,6 +1,6 @@
 
 import 'package:flutter/material.dart';
-import 'package:flutter_dotenv/flutter_dotenv.dart' as DotEnv;
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_movie/ui/details/movie_bindings.dart';
 import 'package:flutter_movie/ui/details/movie_screen.dart';
 import 'package:flutter_movie/ui/people/people_binding.dart';
@@ -10,7 +10,7 @@ import 'ui/people/people_screen.dart';
 import 'ui/search/search_screen.dart';
 
 void main() async {
-  await DotEnv.load(fileName: ".env");
+  await dotenv.load(fileName: ".env");
   runApp(MyApp());
 }
 

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_movie/ui/common/error_retry_widget.dart';
 import 'package:flutter_movie/ui/search/search_controller.dart';
 import 'package:flutter_movie/ui/search/search_list.dart';
